@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version = '1.1.2'
   s.date    = '2010-04-26'
 
-  s.summary     = 'Generates attr_accessors that encrypt and decrypt attributes transparently'
+  s.summary     = 'Generates attr_accessors that encrypt and decrypt attributes transparently. This fork is for Ruby 1.9 and Rails 3 compatibility.'
   s.description = 'Generates attr_accessors that encrypt and decrypt attributes transparently. This fork is for Ruby 1.9 and Rails 3 compatibility.'
 
   s.author   = 'Sean Huber'

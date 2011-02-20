@@ -1,2 +1,8 @@
 .DS_Store
+*.tmproj
+tmtags
+.rvmrc
 pkg
+.yardoc
+doc
+*.gem

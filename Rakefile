@@ -1,9 +1,18 @@
+require 'rubygems'
+require 'appraisal'
+require 'bundler/setup'
+
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
 desc 'Default: run unit tests.'
-task :default => :test
+task :default => :all
+
+desc 'Test the attr_encrypted gem with appraisals.'
+task :all do
+  exec "rake appraisal test"
+end
 
 desc 'Test the attr_encrypted gem.'
 Rake::TestTask.new(:test) do |t|

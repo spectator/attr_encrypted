@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
-  s.name    = 'attr_encrypted'
-  s.version = '1.1.2'
-  s.date    = '2010-04-26'
+  s.name    = 'spectator-attr_encrypted'
+  s.version = '1.1.3'
+  s.date    = '2011-02-23'
 
   s.summary     = 'Generates attr_accessors that encrypt and decrypt attributes transparently. This fork is for Ruby 1.9 and Rails 3 compatibility.'
   s.description = 'Generates attr_accessors that encrypt and decrypt attributes transparently. This fork is for Ruby 1.9 and Rails 3 compatibility.'
@@ -41,14 +41,13 @@ Gem::Specification.new do |s|
   s.add_dependency('eigenclass', '~> 1.1.1')
   s.add_dependency('encryptor', '~> 1.1.0')
 
-  s.add_development_dependency('bundler', '~> 1.0.10')
-  s.add_development_dependency('mocha', '~> 0.9.12')
-  s.add_development_dependency('rake', '~> 0.8.7')
-  s.add_development_dependency('sequel', '~> 3.20.0')
-  s.add_development_dependency('sqlite3-ruby', '~> 1.3.3')
-  s.add_development_dependency('datamapper', '~> 1.0.2')
-  s.add_development_dependency('dm-sqlite-adapter', '~> 1.0.2')
-
-  s.add_development_dependency('activerecord', '~> 3.0.0') if RUBY_VERSION.to_f >= 1.9
-  s.add_development_dependency('activerecord', '~> 2.3.8') if RUBY_VERSION.to_f < 1.9
+  s.add_development_dependency('bundler')
+  s.add_development_dependency('appraisal')
+  s.add_development_dependency('mocha')
+  s.add_development_dependency('rake')
+  s.add_development_dependency('sequel')
+  s.add_development_dependency('sqlite3-ruby')
+  s.add_development_dependency('datamapper')
+  s.add_development_dependency('dm-sqlite-adapter')
+  s.add_development_dependency('activerecord')
 end

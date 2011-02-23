@@ -269,4 +269,9 @@ class AttrEncryptedTest < Test::Unit::TestCase
     assert_equal "not_encrypted_stuff", @user.send(:encrypted_with_if_changed)
   end
 
+  def test_should_return_true_if_method_name_is_defined
+    assert User.send :has_instance_method?, :encrypted_email
+    assert User.send :has_instance_method?, "encrypted_email"
+  end
+
 end
